@@ -1,0 +1,168 @@
+.HomePage{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+.frist-Home-Element{
+    background-color: #222;
+    color: #fff;
+    width:100%;
+    margin: 0;
+    position: relative;
+}
+.Image-contianer img{
+position: relative;
+width: 100%;
+height: 100%;
+object-fit:contain;
+margin-bottom: 5px;
+cursor: pointer;
+}
+.frist-Home-Element h1{
+    margin: 1px;
+    font: normal;
+    font-size: 50px;
+
+}
+
+.frist-Home-Element-container{
+display: grid;
+grid-template-columns: 0.8fr 1.2fr;
+margin: 0;
+}
+
+.categories-container h1{
+    color: black;
+}
+.frist-Home-Element-description{
+    display: flex;
+    align-items: start;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+.description p{
+    font-size: 20px;
+    color: rgba(218, 218, 218, 0.767);
+}
+.frist-Home-Element button{
+    margin: 15px;
+    padding: 20px;
+    align-items: center;
+}
+
+.category-container{
+    display: flex;
+    flex-direction: row;
+
+}
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 0.18fr);
+    column-gap: 50px;
+    flex-direction: column;
+    position: relative;;
+
+
+}
+.category-title{
+    font-size: 38px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.categories-container h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    padding-left: 25px;
+}
+@media (max-width:1150px) {
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(3, 0.18fr);
+        column-gap: 20px;
+        flex-direction: column;
+        position: relative;
+
+    }
+    .frist-Home-Element-description h1{
+        margin: 10px;
+        font: normal;
+        font-size: 40px;
+    
+    }
+
+    .frist-Home-Element-description p{
+        font-size: 15px;
+        width: 330px;
+    }
+}
+@media (max-width:850px) {
+    .frist-Home-Element-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(2, 0.18fr);
+        column-gap: 50px;
+        flex-direction: column;
+        position: relative;
+    }
+    .frist-Home-Element h1{
+        margin: 10px;
+        font: normal;
+        font-size: 30px;
+    
+    }
+    .description{
+        display: flex;
+        align-items: start;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .description p{
+        font-size: 15px;
+    }
+}
+ @media screen and (max-width:570px) {
+    .HomePage{
+        display: flex;
+    }
+    .Image-contianer img {
+     right: 10px;
+     scale: 0.85;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        }
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(1, 0.18fr);
+        /* column-gap: 30px; */
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        right: 15%;
+        margin-bottom: 320px;
+    }
+    .frist-Home-Element h1{
+        margin: 10px;
+        font: normal;
+        font-size: 25px;
+    
+    }
+    .description{
+        display: flex;
+        align-items: start;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .description p{
+        font-size: 20px;
+        width: 330px;
+    }
+}  

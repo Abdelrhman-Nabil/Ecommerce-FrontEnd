@@ -1,0 +1,13 @@
+.search-icon-container{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.ShoppingIcon{
+    width: 24px;
+    height: 24px;
+}

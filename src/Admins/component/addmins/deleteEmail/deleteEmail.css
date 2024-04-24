@@ -1,0 +1,44 @@
+.deleteEmailModal {
+    z-index: 100;
+    position: fixed;
+    top: 24vh;
+    left: 24%;
+    width: 59%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  .deleteEmailModal-header {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    background: #595959;
+    color: white;
+  }
+  
+  .deleteEmailModal-header h2 {
+    margin: 0.5rem;
+  }
+  
+  .deleteEmailModal-content {
+    padding: 1rem 0.5rem;
+    font-size: 20px;
+  }
+  
+  .deleteEmailModal-footer {
+    padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  }
+  
+@media screen and (max-width:450px) {
+  .deleteEmailModal{
+    width: 60%;
+  }
+  .deleteEmailModal-footer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+}

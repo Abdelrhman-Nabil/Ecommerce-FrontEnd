@@ -1,0 +1,70 @@
+.Client-order-page{
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 25%;
+    width:50%;
+    height: 300px;
+    flex-direction: row;
+}
+.the-1-list{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    flex-direction: column;
+    background-color: rgba(190, 190, 190, 1);
+
+border-right: 1px solid black;
+}
+.orders-head{
+    display: flex;
+    position: relative;
+    font-size: 50px;
+    justify-content: center;
+    color: white;
+
+}
+.the-2-list{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 50%;
+    /* height: 80px; */
+    flex-direction: column;
+    background-color: rgba(190, 190, 190, 1);
+}
+.wishlit-head{
+    display: flex;
+    position: relative;
+    font-size: 50px;
+    justify-content: center;
+    color: white;
+    overflow: auto;
+    /* height: 100%; */
+}
+.wishlit-element-empty h1{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+}
+.wishlit-element{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    overflow:scroll;
+   height: 300px;
+}
+
+@media screen and (max-width:750px) {
+    .Client-order-page{
+        width: 75%;
+        left: 10%;
+    }
+    .wishlit-head{
+        font-size: 30px;
+    }
+    .orders-head {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,55 @@
+.view-email-list{
+    display: flex;
+    position: relative;
+    width: 90%;
+    left: 20px;
+    height:70px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 16.5px;
+     margin: 4px 5px;
+}
+.list {
+    display: flex;
+    position: relative;
+    left: 15px;
+    font-size: 25px;
+}
+.list-time{
+    display: flex;
+    position: relative;
+    left: 15px;
+    font-size: 25px;
+}
+.view-email-list-buttton-contianer{
+    display: flex;
+    position: relative;
+    right: 10px;
+}
+.deleteButton{
+    border-radius: 16px;
+    border: none;
+    display: flex;
+    position: relative;
+}
+
+@media only screen and (max-width:880px) {
+    .list-time{
+        font-size: 0px;
+    }
+    .list{
+        font-size: 11px;
+        left: 2px;
+    }
+    
+    .view-email-list{
+        display: flex;
+        left: 10px;
+    }
+    .view-email-list-buttton-contianer{
+        width: 10px;
+        right: 47px;
+    }
+}

@@ -1,0 +1,44 @@
+.search-page{
+    position: relative;
+}
+.search-box {
+display: flex;
+position: relative;
+width: 75%;
+height: 40%;
+top: 35px;
+left: 10%;
+font-size: 20px;
+}
+.View-filterProducts{
+    display: grid;
+    grid-template-columns: repeat(2, 0.18fr);
+    column-gap: 50px;
+    flex-direction: row;
+    position: relative;
+    top: 80px;
+
+}
+
+@media (min-width: 850px) {
+    .View-filterProducts{
+        display: grid;
+        grid-template-columns: repeat(4, 0.18fr);
+        column-gap: 80px;
+        flex-direction: row;
+        position: relative;
+        top: 80px;
+        left: 100px;
+    
+    }
+}
+
+@media  screen  and (max-width:650px) {
+    .search-box{
+        left: 5%;
+    }
+    .View-filterProducts{
+        grid-template-columns: repeat(1, 0.18fr);
+        left: 15px;
+    }
+}

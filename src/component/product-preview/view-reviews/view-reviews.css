@@ -1,0 +1,6 @@
+.theReview{
+    display: flex;
+    position: absolute;
+    background-color: blue;
+    width: 10px;
+}

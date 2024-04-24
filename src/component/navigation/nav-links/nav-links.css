@@ -1,0 +1,163 @@
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 15;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  .screen-view{
+    display: none;
+  }
+  .nav-links li {
+    margin-left: 6rem;
+    margin-top: 2rem;
+    font-size: 5px;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem;
+    
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:active,
+  .nav-links a.active {
+    background:transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+    text-decoration:none;
+  }
+  
+  .nav-links button {
+    cursor: pointer;
+    color: #ffffff;
+    background: transparent;
+    padding: 0.5rem;
+    font: inherit;
+  }
+  
+  .nav-links button:focus {
+    outline: none;
+  }
+  .widows-view{
+    display: flex;
+  }
+  .nav-links button:hover,
+  .nav-links button:active {
+    background: #292929;
+    color: white;
+  }
+  .cartDrop-open{
+    position: absolute;
+    background-color: white;
+    top: 80px;
+    right:20%;
+    border: 1px solid black;
+    z-index: 5;
+    border-radius: 15px;
+  }
+  .accountDrop-open{
+    position: absolute;
+    background-color: white;
+    top: 80px;
+    right:25%;
+    border: 1px solid black;
+    z-index: 5;
+    border-radius: 25%;
+  }
+  .CartDropDown-screen-view{
+    display: none;
+  }
+  .CartDropDown-screen-view button{
+    display: none;
+  }
+  @media  screen and (max-width: 850px) {
+    .nav-links {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      padding-right: 10px;
+      flex-direction: column;
+      font-size: 20px;
+      position: relative;
+      top: 50px;
+      left: 20px;
+    }
+    .widows-view{
+      display: none;
+    }
+    
+    .screen-view{
+      display: flex;
+      flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    }
+    .CartDropDown-screen-view{
+      display: flex;
+      position: relative;
+      left: 160px;
+    }
+    .CartDropDown-screen-view button{
+      display: flex;
+      position: relative;
+      background-color: black;
+      font-size: 15px;
+      justify-content: center;
+    }
+    .nav-links li {
+      margin: 0 0.5rem;
+    }
+  
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+  
+    .nav-links button {
+      color: rgb(0, 0, 0);
+      background: transparent;
+    }
+    
+    .nav-links button:hover,
+    .nav-links button:active {
+      background: #ffffff;
+      color: #ffffff;
+    }
+    .cartDrop-open{
+    position: absolute;
+    background-color: white;
+    top: 80px;
+    right:10%;
+    border: 1px solid black;
+    z-index: 5;
+    border-radius: 15px;
+  }
+  .accountDrop-open{
+    position: absolute;
+    background-color: white;
+    top: 80px;
+    right:15%;
+    border: 1px solid black;
+    z-index: 5;
+    border-radius: 15px;
+  }
+  .cartDrop-open{
+    display: none;
+  }
+  .accountDrop-open {
+    display: none;
+  }
+
+  }
+  

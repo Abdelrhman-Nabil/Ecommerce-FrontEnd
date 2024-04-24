@@ -1,0 +1,65 @@
+.sucmodal {
+    z-index: 100;
+    position: fixed;
+    top: 22vh;
+    left: 10%;
+    width: 80%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 8px;
+    background-color: #222;
+    color: rgb(0, 0, 0);
+  }
+  
+  .sucmodal-header {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    background: #595959;
+    color: white;
+  }
+  
+  .sucmodal-header h2 {
+    margin: 0.5rem;
+  }
+  
+  .sucmodal-content {
+    padding: 1rem 0.5rem;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .sucmodal-footer {
+    padding: 1rem;
+  text-align: center;
+  border-top: 0.2px solid #ccc;
+  position: relative;
+  bottom: 00px;
+  }
+  
+  @media (min-width: 768px) {
+    .sucmodal {
+      left: calc(50% - 20rem);
+      width: 40rem;
+    }
+  }
+  
+  .sucmodal-enter {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+  
+  .sucmodal-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 200ms;
+  }
+  
+  .sucmodal-exit {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .sucmodal-exit-active {
+    transform: translateY(-10rem);
+    opacity: 0;
+    transition: all 200ms;
+  }

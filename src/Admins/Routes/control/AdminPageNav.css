@@ -1,0 +1,130 @@
+nav {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.658);
+    padding: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    position: relative;
+    right: 40px;
+
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+nav ul li a :active,
+nav ul li a:focus {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 2.5px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+nav ul li a svg {
+    width: 30px;
+    height: 30px;
+}
+
+nav ul li p {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: cell;
+    width: 100%;
+    border-bottom: 3px solid black;
+
+
+}
+
+nav ul li p svg {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width:870px) {
+    nav {
+        display: flex;
+        position: absolute;
+        width: 30%;
+    }
+
+    .span-header {
+        display: flex;
+        font-size: 12px;
+        font-weight: 600;
+        position: relative;
+        left: -4px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: start;
+        width: 143%;
+    }
+      nav ul li{
+        margin: 10px;
+      }
+    nav ul li a {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    nav ul li a :active{
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 2.5px;
+        background-color: rgb(109, 19, 19);
+
+    }
+    nav ul li a:focus {
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 2.5px;
+        background-color: rgb(211, 211, 211);
+
+    }
+    nav ul li a:hover{
+        width: 70%;
+    }
+    nav ul li p {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        cursor: cell;
+        width: 70%;
+        border-bottom:3px solid black;
+    
+    
+    }
+}

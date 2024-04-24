@@ -1,0 +1,14 @@
+.wishlist-icon-container{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    right: 1px;
+    top: 0;
+}
+
+
+

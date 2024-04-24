@@ -1,0 +1,41 @@
+.view{
+    border-bottom: 1px solid black;
+    /* border-top: 1px solid black; */
+    margin: 10px;
+    
+}
+.view.vrating{
+    display: flex;
+    flex-direction: row;
+
+}
+.view input[type=radio]{
+    display: none;
+}
+.view.star{
+    cursor: pointer;
+}
+
+.review-data{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 80%;
+    left: 10px;
+}
+.decription-review{
+    display: flex;
+    position: relative;
+}
+.decription-review input{
+    display: flex;
+    position: relative;
+    width: 320px;
+    height: 40px;
+}
+@media screen and (max-width:450px) {
+    .decription-review input{
+     
+        width: 170px;
+    }
+}

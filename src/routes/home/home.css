@@ -1,0 +1,14 @@
+.home{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 5px;
+    
+}
+.center{
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+}

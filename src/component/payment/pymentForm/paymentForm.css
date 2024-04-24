@@ -1,0 +1,92 @@
+.payment-form-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 20px;
+    left: 10%;
+    width: 70%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    padding: 1rem;
+    overflow: hidden;
+    background: white; 
+}
+input{
+    border-radius: 2.5px;
+}
+.frist-elements{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    border-right: 1px solid black;
+}
+.frist-elements h1{
+    color: black;
+    font-size: 20px;
+}
+
+.thier-element{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.thier-element form{
+    display: block;
+    position: relative;
+    flex-direction: column;
+}
+ 
+.thier-element form .form-control{
+    position: relative;
+    left: 0px;
+    position: relative;
+    left: 20px;
+
+}
+.thier-element form .form-control input{
+    width: 80%;
+    display: flex;
+    position: relative;
+}
+
+.totals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.totals label{
+  font-size: 25px;
+  margin: 2px;
+}
+.totals input{
+    width: 70%;
+    height: 40px;
+    font-size: 25px;
+}
+
+.total-unshow{
+    display: none;
+}
+.pay-button button{
+    display: flex;
+    position: relative; 
+   left: 100px;
+   z-index: 6;
+}
+@media  (max-width:490px) {
+    .pay-button button{
+        display: flex;
+    left: 50px;
+    } 
+}
+@media  screen and  (max-width:340px) {
+    .pay-button button{
+        display: flex;
+        position: relative; 
+       left: 25px;
+       z-index: 6;
+    } 
+}

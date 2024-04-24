@@ -1,0 +1,62 @@
+.the-product{
+    display: flex;
+    position: relative;
+    width:85%;
+    left: 50px;
+    bottom: 15px;
+    height:70px;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 2.5px;
+    justify-content: space-between;
+    margin: 4px 5px;
+}
+.buttton-contianer{
+    display: flex;
+    position: relative;
+    width:150px;
+
+}
+.editButton{
+   display: flex;
+   position: relative;
+   height: 40px;
+   font-size: 15px;
+   align-items: center;
+
+}
+.deleteButton{
+   display: flex;
+   position: relative;
+   height: 40px;
+   font-size: 15px;
+   margin-left: 5px;
+   align-items: center;
+}
+
+.editButton:hover{
+    opacity: 0.77;
+    background-color: rgba(0, 128, 43, 0.692);
+}
+.deleteButton:hover{
+    opacity: 0.77;
+    background-color: rgba(255, 0, 0, 0.76);
+}
+.the-product h1{
+ color: black;
+ font-size: 22px;
+}
+@media screen and (max-width:450px) {
+.the-product{
+    left: 0px;
+    width: 95%;
+}
+.the-product h1{
+font-size: 15px;
+}
+.buttton-contianer{
+width: 100px;
+}
+
+}
