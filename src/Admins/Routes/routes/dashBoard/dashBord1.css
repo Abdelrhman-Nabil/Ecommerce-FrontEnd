@@ -1,16 +1,19 @@
+
 .DashBoard{
     display: flex;
     position: relative;
-    width: calc(100%-220px);
-    height: 500px;
+    width: 20%;
 }
-.dashBoard-header{
+.dashBoard-header {
     display: flex;
     position: absolute;
-    height: 25%;
-    width: 83.8%;
+    background-color: rgb(200, 200, 200);
+    height: 35%;
+    width:100%;
+    left:100%;
+    display: flex;
     font-size: 30px;
-    left: 220px;
+
 }
 .dashBoard-header-part1{
     display: flex;
@@ -21,7 +24,7 @@
     display: grid;
     grid-template-columns: 0.4fr 1fr;
     position: absolute;
-    left: 50%;
+    left: 150%;
     width:400px;
     border: 0.8px solid black;
     border-radius: 4px;
@@ -34,7 +37,9 @@
     position: relative;
     width: 100%;
     height: 25px;
-
+    /* background-color: black; 
+     right: 20px; 
+     bottom: 10px; */
 }
 .admin-details-img-container img{
     display: flex;
@@ -53,8 +58,8 @@
 .dashBoard-body {
     display: flex;
     position:absolute;
-    top: 80px;
-    left: 20%;
+    top: 45px;
+    left: 100%;
     flex-direction: column;
 }
 .dashBoard-orders{
@@ -72,16 +77,22 @@
  margin-bottom: 32px;
 }
 .dashBoard-orders-element{
-    display: flex;
+    display: grid;
     position: relative;
-    width: 100%;
-    left: 2px;
+    grid-template-columns: 0.7fr 0.7fr 0.7fr;
+    gap: 10px;
+    left: 5%;
+    margin-bottom: 45px;
+    top: 10px;
    
 }
 .dashBoard-orders-element-totals{
-    display: flex;
+      display: grid;
     position: relative;
-    width: 100%;
+    grid-template-columns: 0.7fr 0.7fr 0.7fr;
+    gap: 10px;
+    left: 5%;
+    margin-bottom: 45px;
   
 }
 .dashBoard-orders-today,
@@ -98,8 +109,6 @@
     align-items: center;
     border-radius: 2.5px;
     box-shadow: 1px 0px 3px 1px rgb(0, 0, 0);
-    margin: 5px;
-    width: 33%;
 
 }
 .dashBoard-orders-today h1,
@@ -127,39 +136,65 @@
     margin-right: 100px; */
 }
  
-@media screen and (max-width:1000px) {
-    .dashBoard-header { 
-        left: 40%;
-        width: 50%;
+
+ /* @media  (max-width:1100px) {
+
+    .admin-details {
+       width: 50%;
+       left: 0px;
+       right: 5px;
+       height: 55px;
+       font-size: 20px;
     }
-       .admin-details { 
-        position: absolute;
-        width:150px;
-        left: 0px;
-        margin-left: 5px;
-        font-size: 15px;
-        position: relative;
-       
-       }
-       .admin-details h5{
+    .dashBoard-orders{
+        display:contents;
+        width: 50%;
+
+    }
+    .dashBoard-orders-element{
         display: flex;
         position: relative;
-        left: 5px;
-       }
-       .admin-details-img-container img{
-           position: relative;
-           object-fit: contain;
-           width: 50px;
-           height:100%;
-           left: 1px;
-           top: -15px;
-          }
-    .dashBoard-header-part1{
+        flex-direction: column;
+        left: -40px;
+        width: 70%;
+    }
+    .dashBoard-orders-element-totals{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        left: -40px;
+        width: 70%;
+        
+    }
+    .dashBoard-header { 
+        font-size: 0px;
+    }
+    .admin-details-img-container img{
+        display: flex;
+        position: relative;
+        object-fit: contain;
+        width: 50px;
+        height: 50px;
+    }
+    .admin-details h5{
+        display: flex;
+        position: relative;
+        left: 30px;
+        bottom: 25px;
+    }
+    .dashBoard-orders-header{
+        left: 50px;
+    }
+    .dashBoard-orders-today-bottom{
         display: none;
     }
+
+} */
+
+
+@media screen and (max-width:1000px) {
     .dashBoard-body{
         left: 130px;
-        width: 50%;
     }
     .dashBoard-orders-header{
      width: 100px;
@@ -170,37 +205,52 @@
      }
      .dashBoard-orders-totals{
         position: relative;
-        bottom: 36px;
+        bottom: 60px;
          }
      .dashBoard-orders-element{
      display:flex;
      flex-direction: column;
      position: relative;
-     width: 100%;
+     width: 90%;
  }
  .dashBoard-orders-element-totals{
     display:flex;
     flex-direction: column;
     position: relative;
-    width: 100%;
+    width: 90%;
 
     
  }
   .dashBoard-orders-today,
 .dashBoard-orders-thisWeek,
 .dashBoard-orders-thisMonth{
- width: 100%;
+ width: 75%;
  height: 50px;
-
+ margin: 0px 5px;
 }
 .dashBoard-orders-totals-today,
 .dashBoard-orders-totals-thisWeek,
 .dashBoard-orders-totals-thisMonth{
- width: 100%;
+ width: 75%;
  height: 50px;
+ margin: 0px 5px;
+}
+.dashBoard-header { 
+ font-size: 0px;
+}
+.admin-details { 
+    left: 158%;
+ right: 22px;
+ width:150px;
+ font-size: 15px;
+ position: relative;
 
 }
-
+.admin-details h5{
+ display: flex;
+ position: relative;
+ /* left: 1px; */
+}
 .dashBoard-orders-header{
 left: 00;
 }
@@ -210,7 +260,14 @@ left: 00;
  width: 30%;
  height: 100px;
 }
-
+.admin-details-img-container img{
+ position: relative;
+ object-fit: contain;
+ width: 50px;
+ height:100%;
+ left: 1px;
+ top: -15px;
+}
 .dashBoard-orders-today text,
 .dashBoard-orders-thisWeek text,
 .dashBoard-orders-thisMonth text{

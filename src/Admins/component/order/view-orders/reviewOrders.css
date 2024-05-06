@@ -21,16 +21,14 @@
 }
 
 .list-email {
-    display: flex;
     position: absolute;
     width: 20%;
     left: 18%;
     font-size: 10px;
+    overflow-wrap: break-word;
 
 
 }
-
-
 .list-address {
     display: flex;
     position: absolute;
@@ -69,13 +67,20 @@
 }
 
 @media screen and (max-width:450px) {
+
     .view-order-list {
         width: 200%;
     }
 
     .list-email {
-        font-size: 10px;
+    position: absolute;
+    width: 12%;
+    left: 27%;
+    font-size: 10px;
+    overflow-wrap: break-word;
 
-
+    }
+    .list-address{
+        font-size: 9px;
     }
 }

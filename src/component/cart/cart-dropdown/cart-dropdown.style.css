@@ -28,5 +28,9 @@
   flex-direction: column;
   overflow: auto;
 }
+@media screen and (max-width:600px) {
 
-
+.CartDropdownContainer {
+  width: 200px;
+  right: 35px;
+}}

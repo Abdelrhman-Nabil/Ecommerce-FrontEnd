@@ -16,7 +16,7 @@
 .ordersss-view{
   height: 417px;
   display: flex;
-  overflow: scroll;
+  overflow-y: scroll;
   position: absolute;
   left: 40px;
   top: 80px;
@@ -52,8 +52,18 @@
 
 }
 @media screen and (max-width:450px) {
+     .order-Page{
+      background-color: blue;
+      left:80px;
+     }
+     .ordersss-view {
+      width: 74%;
+}}
+  /* .order-Page h1{
+    left: -88px;
+  }
   .ordersss-view{
-    left: -91px;
+    left: -95px;
     width:60%;
     overflow: scroll;
   }
@@ -68,4 +78,4 @@
   .order-total{
     left: 35%;
   }
-}
+} */

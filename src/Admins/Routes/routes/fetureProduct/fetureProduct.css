@@ -1,11 +1,12 @@
 .FetureProduct-body{
     display: flex;
     position: relative;
-    left: 250px;
-    width:65%;
-    right: 0;
+    width: calc(100% - 220px);
+    flex-direction: row;
+    left: 220px;
+    height: 550px;
+    
 }
-
 .FetureProduct-header{
     display: flex;
     font-size: 40px;
@@ -21,8 +22,9 @@
     background-color: rgb(184, 184, 184);
     box-shadow: 0.25px 1px 11px 0.8px black;
     top: 150px;
-    left: 250px;
+    left: 150px;
 }
+
 .FetureProduct-options label{
     display: flex;
     position: relative;
@@ -55,11 +57,14 @@
 }
 
 @media screen and (max-width:650px) {
-
+    .FetureProduct-body{
+     left: 105px;
+    width: 220px;
+    }
     .FetureProduct-options{
-        width:88%;
+        width: 92%;
         top: 160px;
-        left: -110px;
+        left: 10px;
     }
     .FetureProduct-header{
         display: flex;
@@ -67,7 +72,6 @@
         width: 70px;
         position: absolute;
         top: 15px;
-        left: -110px;
     }
     .feture-product-button{
         left: -10px;;
@@ -85,4 +89,4 @@
     font-weight: 500;
     top: 50px;
     }
-}
+} 

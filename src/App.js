@@ -8,7 +8,7 @@ import Home from "./routes/home/home"
 import Auth from "./routes/auth/auth"
 import AllProduct from "./routes/allProducts/allPorducts"
 import SearchPage from "./routes/searchPage/searchPage.jsx"
-import ProductPreview from "./routes/productPreview/productPreview.jsx"
+import Product from "./routes/product/product.jsx"
 import CategoriesPage from "./routes/categories/categories"
 import CheckOut from './routes/checkOut/checkOut.jsx'
 import PaymentForm from "./component/payment/pymentForm/paymentForm.jsx"
@@ -53,7 +53,7 @@ const App=()=>{
       <Route path="auth" element={<Auth/>}/>
       <Route path="allProduct" element={<AllProduct/>}/>
       <Route path="SearchPage" element={<SearchPage/>}/>
-      <Route path="productPreview/:productId" element={<ProductPreview/>}/>
+      <Route path="productPreview/:productId" element={<Product/>}/>
       <Route path="CategoriesPage" element={<CategoriesPage/>} />
       <Route path="clientOrders" element={<ClientOrderPage/>}/>
       <Route path="checkout" element={<CheckOut />} />

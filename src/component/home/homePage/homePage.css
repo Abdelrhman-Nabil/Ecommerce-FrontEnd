@@ -92,8 +92,7 @@ margin: 0;
     }
 
     .frist-Home-Element-description p{
-        font-size: 15px;
-        width: 330px;
+        font-size: 19px;
     }
 }
 @media (max-width:850px) {
