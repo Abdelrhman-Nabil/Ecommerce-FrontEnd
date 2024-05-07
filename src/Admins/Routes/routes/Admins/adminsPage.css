@@ -3,7 +3,7 @@
     position: relative;
     width: calc(100% - 220px);
     flex-direction: row;
-    left: 220px;
+    /* left: 220px; */
     height: 550px;
 }
 .addminPage-header{

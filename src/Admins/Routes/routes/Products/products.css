@@ -7,7 +7,7 @@
 .product-page-header{
     display: flex;
     position: absolute;
-    left: 275px;
+    left: 75px;
 }
 .product-page-header button:hover{
     opacity: 1;
@@ -16,7 +16,7 @@
 .view-product{
     display: flex;
     position: absolute;
-    left:27%;
+    left:17%;
     top: 15%;
     width: 50%;
     flex-direction: column;

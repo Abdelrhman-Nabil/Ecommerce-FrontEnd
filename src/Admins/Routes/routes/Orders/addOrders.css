@@ -1,10 +1,8 @@
 .order-Page{
     display: flex;
     position: relative;
-    left: 220px;
-    width: 78%;
+    width: 100%;
     height: 100%;
-    background-color: rgb(200, 200, 200);
 }
 .order-Page h1{
     color: black;
@@ -53,8 +51,9 @@
 }
 @media screen and (max-width:450px) {
      .order-Page{
-      background-color: blue;
-      left:80px;
+      /* background-color: blue; */
+      width: 78%;
+      left:77px;
      }
      .ordersss-view {
       width: 74%;

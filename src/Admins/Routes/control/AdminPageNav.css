@@ -2,32 +2,32 @@
     display: flex;
     position: relative;
     width: 100%;
+    height: 632px;
 }
-nav {
+nav{
+    width: 15%;
+    background-color: rgba(161, 161, 161, 0.466);
     z-index: 10;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.658);
-    padding: 20px 10px;
-}
 
+}
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 70%;
+    height: 90%;
     position: relative;
     right: 40px;
+    top: -53px;
 
 }
 
 nav ul li {
     width: 100%;
+    position: relative;
+    left: 5px;
 }
 
 nav ul li a:hover {
@@ -50,7 +50,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     cursor: pointer;
-    width: 100%;
+    width: 101%;
     font-size: 20px;
 }
 
@@ -67,15 +67,7 @@ nav ul li p {
     cursor: cell;
     width: 100%;
     border-bottom: 3px solid black;
-
-
 }
-
-nav ul li p svg {
-    width: 30px;
-    height: 30px;
-}
-
 @media screen and (max-width:870px) {
     .plan-view{
         background-color: blue;
@@ -85,6 +77,8 @@ nav ul li p svg {
         display: flex;
         position: absolute;
         width: 30%;
+        height: 650px;
+
     }
 
     .span-header {
@@ -99,6 +93,7 @@ nav ul li p svg {
         display: flex;
         justify-content: start;
         width: 143%;
+        top: -66px;
     }
       nav ul li{
         margin: 10px;
@@ -106,6 +101,7 @@ nav ul li p svg {
     nav ul li a {
         margin: 0;
         font-size: 15px;
+        width: 90px;
     }
 
     nav ul li a :active{
@@ -133,6 +129,7 @@ nav ul li p svg {
         cursor: cell;
         width: 70%;
         border-bottom:3px solid black;
+        font-size: 15px;
     
     
     }
