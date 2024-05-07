@@ -92,9 +92,10 @@
     
     }
       .main-navigation-menu-btn{
-          display: flex;
-          position: relative;
-          left: 0px;
+        display: flex;
+        position: relative;
+        left: 0px;
+        top: 19px;
       }
       .main-Nav{
         display: none;

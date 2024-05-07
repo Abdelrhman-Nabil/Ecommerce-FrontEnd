@@ -128,18 +128,18 @@
 }
  
 @media screen and (max-width:1000px) {
-    .dashBoard-header { 
-        left: 40%;
+    .DashBoard{
         width: 50%;
+        left:115px;
+    }
+    .dashBoard-header { 
+        width: 50%;
+        left: 10px;
     }
        .admin-details { 
-        position: absolute;
-        width:150px;
-        left: 0px;
-        margin-left: 5px;
-        font-size: 15px;
-        position: relative;
-       
+        display: flex;
+        left: 0;
+        width: 182px;       
        }
        .admin-details h5{
         display: flex;
@@ -158,7 +158,6 @@
         display: none;
     }
     .dashBoard-body{
-        left: 130px;
         width: 50%;
     }
     .dashBoard-orders-header{

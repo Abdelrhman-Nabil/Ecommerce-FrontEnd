@@ -1,3 +1,8 @@
+.plan-View{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
 nav {
     z-index: 10;
     position: absolute;
@@ -72,6 +77,10 @@ nav ul li p svg {
 }
 
 @media screen and (max-width:870px) {
+    .plan-view{
+        background-color: blue;
+        color: rgb(255, 255, 255);
+    }
     nav {
         display: flex;
         position: absolute;
