@@ -5,6 +5,7 @@ import './ordersPage.css'
 import OrderList from '../../../component/orders&wishlist/orders/oder-list/order-list'
 const ClientOrderPage=()=>{
     const {wishlistItems}=useContext(WishlistContext)
+    console.log(wishlistItems)
     return(
         <div className='Client-order-page'>
             <div className='the-1-list'>
@@ -13,7 +14,7 @@ const ClientOrderPage=()=>{
             </div>
             <div className='the-2-list'>
             <div className='wishlit-head'>Wishlist</div>
-            {wishlistItems.length===0?
+            {   wishlistItems&& wishlistItems.length===0?
             <div className={`wishlit-element-empty`}>
             <h1>Empty</h1>
             </div>
@@ -22,10 +23,30 @@ const ClientOrderPage=()=>{
             {wishlistItems &&wishlistItems.map((item) => (
                <WishlistItem key={item.id} data={item} /> 
              ))}
-            </div>}
+            </div>
+        }
            
             </div>
         </div>
     )
 }
 export default ClientOrderPage
+
+
+/*
+<div className='the-2-list'>
+            <div className='wishlit-head'>Wishlist</div>
+            {   boka&& boka.length===0?
+            <div className={`wishlit-element-empty`}>
+            <h1>Empty</h1>
+            </div>
+            :
+            <div className={`wishlit-element`}>
+            {boka &&boka.map((item) => (
+               <WishlistItem key={item.id} data={item} /> 
+             ))}
+            </div>
+        }
+           
+            </div>
+*/

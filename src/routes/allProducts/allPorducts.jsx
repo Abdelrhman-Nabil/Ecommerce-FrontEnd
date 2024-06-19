@@ -29,6 +29,7 @@ return(
      <div className="allProduct-page">
      {isLoading && <LoadingSpinner overlay/>}
     <h2>All Products</h2>
+  
     <div className='preview-products'>
     {loadedProduct &&loadedProduct.map((product) => (
               <HomeItem key={product.id} product={product} />

@@ -21,7 +21,7 @@
     display: grid;
     grid-template-columns: 0.4fr 1fr;
     position: absolute;
-    left: 115%;
+    left: 565px;
     width:400px;
     border: 0.8px solid black;
     border-radius: 4px;
@@ -75,13 +75,14 @@
     display: flex;
     position: relative;
     width: 100%;
-    left: 2px;
+    left: 100px;
    
 }
 .dashBoard-orders-element-totals{
     display: flex;
     position: relative;
     width: 100%;
+    left: 100px;
   
 }
 .dashBoard-orders-today,
@@ -178,14 +179,14 @@
      flex-direction: column;
      position: relative;
      width: 100%;
+    left: 0;
  }
  .dashBoard-orders-element-totals{
     display:flex;
     flex-direction: column;
     position: relative;
     width: 100%;
-
-    
+    left: 0;
  }
   .dashBoard-orders-today,
 .dashBoard-orders-thisWeek,

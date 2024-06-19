@@ -20,7 +20,7 @@ export const AuthProvider=({children})=>{
     setTokenExpirationDate(tokenExpirationDate)
     setUserId(uid)
     localStorage.setItem("userData", JSON.stringify({userId:uid,token:token,expiration:tokenExpirationDate.toISOString()}))
-
+    console.log(uid)
   },
    []);
   
@@ -30,6 +30,9 @@ export const AuthProvider=({children})=>{
     setTokenExpirationDate(null)
     localStorage.removeItem('userData');
     localStorage.removeItem('userCart');
+    localStorage.removeItem("userWishlist");
+ 
+    
   }, []);
 
   useEffect(()=>{

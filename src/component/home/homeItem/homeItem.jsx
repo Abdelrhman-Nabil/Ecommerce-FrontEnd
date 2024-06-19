@@ -7,19 +7,23 @@ import './homeItem.css'
 const HomeItem=({product})=>{
   let navigate = useNavigate();
   const {addItemsToCart}=useContext(CartContext);
-  const {addItemsToWishlist,wishlistItems}=useContext(WishlistContext);
+  const {addItemsToWishlist,wishlistItems,clearItemFromWishlist}=useContext(WishlistContext);
   const addProductToCart=()=>{addItemsToCart(product);}
   const {image,title,price,id}=product;
   const submitHandler=()=>{ 
     navigate(`/productPreview/${id}`)
   }
   const wishlistaddHandler=()=>{
-    addItemsToWishlist(product)
-
+    if(wishlistItems){
+      const existing=wishlistItems.find((wishlistItem)=>wishlistItem.id === product.id);
+    existing?clearItemFromWishlist(product):addItemsToWishlist(product)
+    }
+    
   }
 const findItemInWishList=()=>{
  if(wishlistItems){
   const existing=wishlistItems.find((wishlistItem)=>wishlistItem.id === product.id);
+  console.log(existing)
   if(existing){return true}else{return false}
  }
 

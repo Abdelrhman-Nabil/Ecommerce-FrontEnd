@@ -75,7 +75,7 @@ const switchModeHandler=()=>{
     {responseData.addmin===true ?navigate('/controlPage/dashboard'):navigate('/')}
 
      login(responseData.userId,responseData.token);
-
+      console.log(responseData.userId)
       }catch(err){}
      
     }

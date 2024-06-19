@@ -9,7 +9,7 @@ const OrderList=()=>{
     const [clientOrders,setClientOrders]=useState('')
  const {sendRequest,isLoading}=useHttpClinet()
      const {userId}=useContext(AuthContext)
-     
+     console.log(userId)
  useEffect(()=>{
     const fetchOrder=async()=>{
       try{

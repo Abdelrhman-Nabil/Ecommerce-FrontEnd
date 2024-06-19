@@ -1,29 +1,29 @@
-import { Route,Routes } from "react-router-dom"
-import { useContext, useEffect } from "react"
-import { AuthContext } from "./context/auth.context.jsx"
-import { CartContext } from "./context/cart.context.jsx"
-import { WishlistContext } from "./context/wishlist.context.jsx"
-import Navigation from "./routes/navigation/navigation"
-import Home from "./routes/home/home"
-import Auth from "./routes/auth/auth"
-import AllProduct from "./routes/allProducts/allPorducts"
-import SearchPage from "./routes/searchPage/searchPage.jsx"
-import Product from "./routes/product/product.jsx"
-import CategoriesPage from "./routes/categories/categories"
-import CheckOut from './routes/checkOut/checkOut.jsx'
-import PaymentForm from "./component/payment/pymentForm/paymentForm.jsx"
-import ClientOrderPage from "./routes/account/orderPage/ordersPage.jsx"
-import CheckOutSucess from "./component/paymentButton/checkOutSuccess/checkOutSuccess.jsx"
+import { Route,Routes } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { AuthContext } from "./context/auth.context.jsx";
+import { CartContext } from "./context/cart.context.jsx";
+import { WishlistContext } from "./context/wishlist.context.jsx";
+import Navigation from "./routes/navigation/navigation";
+import Home from "./routes/home/home";
+import Auth from "./routes/auth/auth";
+import AllProduct from "./routes/allProducts/allPorducts";
+import SearchPage from "./routes/searchPage/searchPage.jsx";
+import Product from "./routes/product/product.jsx";
+import CategoriesPage from "./routes/categories/categories";
+import CheckOut from './routes/checkOut/checkOut.jsx';
+import PaymentForm from "./component/payment/pymentForm/paymentForm.jsx";
+import ClientOrderPage from "./routes/account/orderPage/ordersPage.jsx";
+import CheckOutSucess from "./component/paymentButton/checkOutSuccess/checkOutSuccess.jsx";
 // addmin page
 
-import AdminPageNav from "./Admins/Routes/control/AdminPageNav"
-import DashBoard from "./Admins/Routes/routes/dashBoard/dashBoard"
-import Products from "./Admins/Routes/routes/Products/products"
-import AddProduct from "./Admins/component/product/addProduct/addProduct"
-import EditProduct from "./Admins/component/product/editProduct/editProduct"
-import OrderPage from "./Admins/Routes/routes/Orders/addOrders"
-import AdminsPage from "./Admins/Routes/routes/Admins/adminsPage.jsx"
-import FetureProduct from "./Admins/Routes/routes/fetureProduct/fetureProduct.jsx"
+import AdminPageNav from "./Admins/Routes/control/AdminPageNav";
+import DashBoard from "./Admins/Routes/routes/dashBoard/dashBoard";
+import Products from "./Admins/Routes/routes/Products/products";
+import AddProduct from "./Admins/component/product/addProduct/addProduct";
+import EditProduct from "./Admins/component/product/editProduct/editProduct";
+import OrderPage from "./Admins/Routes/routes/Orders/addOrders";
+import AdminsPage from "./Admins/Routes/routes/Admins/adminsPage.jsx";
+import FetureProduct from "./Admins/Routes/routes/fetureProduct/fetureProduct.jsx";
 
 
 const App=()=>{
@@ -39,12 +39,10 @@ const App=()=>{
     if(CartData){
        setCartItems(CartData.cartItems)
     }
-    const userWishlist=JSON.parse(localStorage.getItem("userWishlist"));
-
-    if(userWishlist){
-      setWishlistItems(userWishlist.Wishlist)
+    const WishlistData=JSON.parse(localStorage.getItem("userWishlist"));
+    if(WishlistData){
+    setWishlistItems(WishlistData.wishlistItems)
     }
-
   },[login, setCartItems,setWishlistItems])
   return(
     <Routes>

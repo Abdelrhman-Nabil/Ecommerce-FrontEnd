@@ -60,8 +60,8 @@ margin: 0;
     display: grid;
     grid-template-columns: repeat(4, 0.18fr);
     column-gap: 50px;
-    flex-direction: column;
-    position: relative;;
+    position: relative;
+    left: 130px;
 
 
 }
