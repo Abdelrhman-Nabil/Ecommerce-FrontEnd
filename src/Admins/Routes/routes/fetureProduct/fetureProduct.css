@@ -57,8 +57,8 @@
 
 @media screen and (max-width:650px) {
     .FetureProduct-body{
-     left: 105px;
-    width: 220px;
+        left: 150px;
+        width: 220px;
     }
     .FetureProduct-options{
         width: 92%;

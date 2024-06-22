@@ -19,7 +19,7 @@
 }
 .preview-products{
 display: grid;
-grid-template-columns: repeat(4, 0.85fr);
+grid-template-columns: repeat(5, 0.85fr);
 column-gap: 20px;
 flex-direction: row;
 position: relative;

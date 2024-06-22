@@ -59,7 +59,7 @@ const Home = () => {
 
   let NewArrivals = loadedProduct;
   if (loadedProduct) {
-    NewArrivals = loadedProduct.slice(-4);
+    NewArrivals = loadedProduct.slice(-5);
   }
   
   

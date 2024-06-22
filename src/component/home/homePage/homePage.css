@@ -58,7 +58,7 @@ margin: 0;
 }
 .product-container {
     display: grid;
-    grid-template-columns: repeat(4, 0.18fr);
+    grid-template-columns: repeat(5, 0.18fr);
     column-gap: 50px;
     flex-direction: column;
     position: relative;;

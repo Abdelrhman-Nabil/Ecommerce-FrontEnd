@@ -24,12 +24,10 @@
    right: 20px;
 }
 .addAdmins-data button{
-
     display: inline-flex;
-    position: relative; 
-    left: 480px;
+    position: relative;
+    left: 500px;
     top: 70px;
-    border-radius: 25px
 ;}
 
 @media screen and (max-width:650px) {

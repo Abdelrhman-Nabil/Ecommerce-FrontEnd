@@ -17,10 +17,10 @@
 .addminPage-emailList{
     display: flex;
     position: relative;
-    left: 15%;
+    left: 10%;
     top: 250px;
-    width: 50%;
-    height: 320px;
+    width: 70%;
+    height: 200px;
     overflow: scroll;
     overflow-x:hidden ;
     flex-direction: column;

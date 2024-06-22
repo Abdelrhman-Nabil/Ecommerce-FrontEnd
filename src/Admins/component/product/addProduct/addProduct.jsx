@@ -78,7 +78,7 @@ const AddProduct = () => {
         <h1>Add Product</h1>
         <div className="add-product-data">
          <div className="add-product-data-formData"> 
-         <form onSubmit={productSubmitHandler}>
+         <form  onSubmit={productSubmitHandler}>
           {isLoading && <LoadingSpinner asOverlay />}
 
             <Input

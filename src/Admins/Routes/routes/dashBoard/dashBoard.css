@@ -75,13 +75,16 @@
     display: flex;
     position: relative;
     width: 100%;
-    left: 2px;
+    left: 50px;
+    top: 13px;
    
 }
 .dashBoard-orders-element-totals{
     display: flex;
     position: relative;
     width: 100%;
+    left: 50px;
+    top: 13px;
   
 }
 .dashBoard-orders-today,
@@ -133,12 +136,12 @@
         left:115px;
     }
     .dashBoard-header { 
-        width: 50%;
+        width: 0%;
         left: 10px;
     }
        .admin-details { 
         display: flex;
-        left: 0;
+        left: 50px;
         width: 182px;       
        }
        .admin-details h5{
@@ -160,7 +163,7 @@
     }
     .dashBoard-body{
         width: 70%;
-
+        left: 50px;
     }
     .dashBoard-orders-header{
      width: 100px;
@@ -178,13 +181,16 @@
      flex-direction: column;
      position: relative;
      width: 100%;
+     left: 0;
+     top: 0;
  }
  .dashBoard-orders-element-totals{
     display:flex;
     flex-direction: column;
     position: relative;
     width: 100%;
-
+    left: 0;
+    top: 0;
     
  }
   .dashBoard-orders-today,
