@@ -24,9 +24,8 @@
    right: 20px;
 }
 .addAdmins-data button{
-    display: inline-flex;
-    position: relative;
-    left: 500px;
+    position: absolute;
+    left: 76%;
     top: 70px;
 ;}
 

@@ -23,7 +23,7 @@ grid-template-columns: repeat(5, 0.85fr);
 column-gap: 20px;
 flex-direction: row;
 position: relative;
-left: 30px;
+left: 0px;
 }
 
 
@@ -55,7 +55,7 @@ left: 30px;
         flex-direction: row;
         padding: 25px;
         position: relative;
-        left:-25px;
+        left:0px;
         margin-bottom: 320px;
 
     }

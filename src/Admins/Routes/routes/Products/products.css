@@ -41,7 +41,7 @@
 
     .view-product {
         display: flex;
-        left: 120px;
+        left: 150px;
         width: 60%;
         height: 400px;
         overflow: scroll;
